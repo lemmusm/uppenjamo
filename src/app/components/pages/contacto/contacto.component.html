@@ -1,0 +1,53 @@
+<div class="container main-container">
+  <mdb-card cascade="true" narrower="true" class="mb-2">
+    <div class="view view-cascade portada-paginas gradient-card-header color-gradient-contacto white-text">
+      <h2 class="card-header-title text-center mb-3">Contacto</h2>
+      <p class="mb-0 text-center">Universidad Politécnica de Pénjamo</p>
+    </div>
+  </mdb-card>
+
+  <mdb-card cascade="true" narrower="true" class="mb-2">
+    <mdb-card-body cascade="true">
+      <mdb-card-title>
+        <h4 class="text-left">Información:</h4>
+      </mdb-card-title>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <ul class="list-group text-left">
+            <h6 class="text-left mt-3">Vinculación</h6>
+            <li class="list-group-item"><i aria-hidden="true" class="fa fa-arrow-right list-icon"></i>
+              vinculacionydifusion@uppenjamo.edu.mx </li>
+            <h6 class="text-left mt-3">Control Escolar</h6>
+            <li class="list-group-item"><i aria-hidden="true" class="fa fa-arrow-right list-icon"></i>
+              cescolar@uppenjamo.edu.mx </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <ul class="list-group text-left">
+            <h6 class="text-left mt-3">Difusión</h6>
+            <li class="list-group-item"><i aria-hidden="true" class="fa fa-arrow-right list-icon"></i>
+              difusion@uppenjamo.edu.mx </li>
+            <h6 class="text-left mt-3">Capital Humano</h6>
+            <li class="list-group-item"><i aria-hidden="true" class="fa fa-arrow-right list-icon"></i>
+              capitalhumano@uppenjamo.edu.mx </li>
+          </ul>
+        </div>
+      </div>
+    </mdb-card-body>
+  </mdb-card>
+
+  <mdb-card cascade="true" narrower="true" class="mb-2">
+    <mdb-card-body cascade="true">
+      <mdb-card-title>
+        <h4 class="text-left">Mapa de ubicación</h4>
+      </mdb-card-title>
+
+      <!-- mapa -->
+      <agm-map [latitude]="20.4428086" [longitude]="-101.6551267">
+        <agm-marker [latitude]="20.4428086" [longitude]="-101.6551267">
+          <agm-info-window>Börk</agm-info-window>
+        </agm-marker>
+      </agm-map>
+    </mdb-card-body>
+  </mdb-card>
+</div>
