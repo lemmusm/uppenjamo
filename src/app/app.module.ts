@@ -1,3 +1,5 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 // import mdbootstrapmodule
@@ -58,8 +60,11 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
     ContanciaEstudiosComponent,
     ContactoComponent
   ],
-  imports: [
-    BrowserModule,
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
+    
     AppRoutingModule,
     MdbootstrapModule,
     AgmCoreModule.forRoot({
@@ -68,6 +73,5 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }

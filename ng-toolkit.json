@@ -1,0 +1,7 @@
+{
+  "universal": {
+    "project": "webuppenjamo",
+    "skipInstall": false,
+    "directory": "."
+  }
+}
