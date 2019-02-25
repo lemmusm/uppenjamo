@@ -1,87 +1,333 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark teal lighten-1 scrolling-navbar ie-nav">
-
+<mdb-navbar
+  SideClass="navbar fixed-top navbar-expand-lg navbar-dark teal lighten-1 scrolling-navbar ie-nav"
+>
   <!-- Navbar brand -->
   <mdb-navbar-brand>
-    <a [routerLink]="['']"> 
-      <img alt="logo" src="./assets/img/logo_white.png" style="width:100px"/>
+    <a [routerLink]="['']">
+      <img alt="logo" src="./assets/img/logo_white.png" style="width:100px" />
     </a>
   </mdb-navbar-brand>
 
   <!-- Collapsible content -->
   <links>
-
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Acerca de<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['filosofia-institucional']">Filosofía institucional</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['normateca']">Normateca</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Servicios<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-            <a class="dropdown-item waves-light" mdbWavesEffect href="http://aulavirtual.uppenjamo.edu.mx/aulavirtual/" rel="noopener noreferrer" target="_blank">Aula virtual</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['becas']">Becas</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['biblioteca-digital']">Biblioteca digital</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="http://uppenjamo.edu.mx/bt/" rel="noopener noreferrer" target="_blank">Bolsa de trabajo UPPE</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="https://uppe.occ.com.mx/Bolsa_Trabajo" rel="noopener noreferrer" target="_blank">Bolsa de trabajo OCC</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="http://goo.gl/forms/6qgI3hzEZUputWb22" rel="noopener noreferrer" target="_blank">Calidad</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="http://cd.uppenjamo.edu.mx/" rel="noopener noreferrer" target="_blank">Consejo directivo</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="http://ci.uppenjamo.edu.mx/" rel="noopener noreferrer" target="_blank">Sistema de control interno</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="https://www.uppenjamo.edu.mx/eval/" rel="noopener noreferrer" target="_blank">Evaluación docente</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['equidad-genero']">Módelo equidad de género</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="./assets/doc/juridico/metas_strc.zip" target="_blank">Metas STRC</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['igualdad-laboral']">Norma Mexicana en Igualdad Laboral y No Discriminación</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['laboratorios']">Laboratorios</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="http://sgi.uppenjamo.edu.mx/" rel="noopener noreferrer" target="_blank">Sistema de gestión integral</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="http://uroadrunner.uppenjamo.edu.mx/" rel="noopener noreferrer" target="_blank">URoadRunner magazine</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Oferta educativa<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ilt']">Ingeniería en logística y transporte</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['isw']">Ingeniería en sofware</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['lag']">Licenciatura en administración y gestión empresarial</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['iag']">Ingeniería agroindustrial</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ibt']">Ingeniería en biotecnología</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ind']">Ingeniería industrial</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Transparencia<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" mdbWavesEffect  href="https://www.uppenjamo.edu.mx/transparencia/index" rel="noopener noreferrer" target="_blank">Información Financiera -Armonización Contable LGCG y LDF</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect  [routerLink]="['portal-transparencia']">Cumplimiento al PEF y Estados Financieros</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Control escolar<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-            <a class="dropdown-item waves-light" mdbWavesEffect  href="d/escolares/calendario_escolar.pdf" rel="noopener noreferrer" target="_blank">Calendario escolar</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="https://docs.google.com/forms/d/1sZ4IHA-kz8zRRPcRpBgklw4ee0gtzEdO8OkGf9j1_ww/viewform?formkey=dEh1VEQ1U25yRGhHV2tjM0ZwMUhZNHc6MQ">Encuesta de nuevo ingreso</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect  [routerLink]="['horarios']">Horarios por grupo</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect  [routerLink]="['requisitos_inscripcion']">Requisitos para inscripción</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect  [routerLink]="['contancia_estudios']">Solicitud de constancia de estudios</a>
-          </div>
-        </li>
-        <li class="nav-item" >
-          <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['contacto']">Contacto</a>
-        </li>
-      </ul>
-      <!-- Links -->
-<!-- mail icon -->
-        <a class="icons nav-link waves-effect waves-light" href="https://mail.google.com/a/uppenjamo.edu.mx" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-google"></i></a>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          mdbWavesEffect
+        >
+          Acerca de<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['filosofia-institucional']"
+            >Filosofía institucional</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['normateca']"
+            >Normateca</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          mdbWavesEffect
+        >
+          Servicios<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://aulavirtual.uppenjamo.edu.mx/aulavirtual/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Aula virtual</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['becas']"
+            >Becas</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['biblioteca-digital']"
+            >Biblioteca digital</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://uppenjamo.edu.mx/bt/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Bolsa de trabajo UPPE</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://uppe.occ.com.mx/Bolsa_Trabajo"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Bolsa de trabajo OCC</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://goo.gl/forms/6qgI3hzEZUputWb22"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Calidad</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://cd.uppenjamo.edu.mx/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Consejo directivo</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://ci.uppenjamo.edu.mx/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Sistema de control interno</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://www.uppenjamo.edu.mx/eval/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Evaluación docente</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['equidad-genero']"
+            >Módelo equidad de género</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="./assets/doc/juridico/metas_strc.zip"
+            target="_blank"
+            >Metas STRC</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['igualdad-laboral']"
+            >Norma Mexicana en Igualdad Laboral y No Discriminación</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['laboratorios']"
+            >Laboratorios</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://sgi.uppenjamo.edu.mx/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Sistema de gestión integral</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://sistemas.uppenjamo.edu.mx/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Soporte Técnico R1PI6</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="http://uroadrunner.uppenjamo.edu.mx/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >URoadRunner magazine</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          mdbWavesEffect
+        >
+          Oferta educativa<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['ilt']"
+            >Ingeniería en logística y transporte</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['isw']"
+            >Ingeniería en sofware</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['lag']"
+            >Licenciatura en administración y gestión empresarial</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['iag']"
+            >Ingeniería agroindustrial</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['ibt']"
+            >Ingeniería en biotecnología</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['ind']"
+            >Ingeniería industrial</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          mdbWavesEffect
+        >
+          Transparencia<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="https://www.uppenjamo.edu.mx/transparencia/index"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Información Financiera -Armonización Contable LGCG y LDF</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['portal-transparencia']"
+            >Cumplimiento al PEF y Estados Financieros</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          mdbWavesEffect
+          type="button"
+          class="nav-link dropdown-toggle waves-light"
+          mdbWavesEffect
+        >
+          Control escolar<span class="caret"></span
+        ></a>
+        <div
+          *dropdownMenu
+          class="dropdown-menu dropdown dropdown-primary"
+          role="menu"
+        >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="d/escolares/calendario_escolar.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Calendario escolar</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            href="https://docs.google.com/forms/d/1sZ4IHA-kz8zRRPcRpBgklw4ee0gtzEdO8OkGf9j1_ww/viewform?formkey=dEh1VEQ1U25yRGhHV2tjM0ZwMUhZNHc6MQ"
+            >Encuesta de nuevo ingreso</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['horarios']"
+            >Horarios por grupo</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['requisitos_inscripcion']"
+            >Requisitos para inscripción</a
+          >
+          <a
+            class="dropdown-item waves-light"
+            mdbWavesEffect
+            [routerLink]="['contancia_estudios']"
+            >Solicitud de constancia de estudios</a
+          >
+        </div>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link waves-light"
+          mdbWavesEffect
+          [routerLink]="['contacto']"
+          >Contacto</a
+        >
+      </li>
+    </ul>
+    <!-- Links -->
+    <!-- mail icon -->
+    <a
+      class="icons nav-link waves-effect waves-light"
+      href="https://mail.google.com/a/uppenjamo.edu.mx"
+      rel="noopener noreferrer"
+      target="_blank"
+      ><i aria-hidden="true" class="fa fa-google"></i
+    ></a>
   </links>
   <!-- Collapsible content -->
-
 </mdb-navbar>
 <!--/.Navbar-->

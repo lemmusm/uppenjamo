@@ -1,46 +1,46 @@
 body {
-   background-color: #cbd0d3;
-   background-image: url(./assets/img/background.gif);
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center center;
+  background-color: #cbd0d3;
+  background-image: url(./assets/img/background.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 links {
-    margin-left: 2em
+  margin-left: 2em;
 }
 
 .main-container {
-   margin-top: 110px;
-   margin-bottom: 30px
+  margin-top: 110px;
+  margin-bottom: 30px;
 }
 // margin
 .mt-1 {
-   margin-top: 1.5rem !important
+  margin-top: 1.5rem !important;
 }
 .mt-3 {
-   margin-top: 2rem !important;
+  margin-top: 2rem !important;
 }
 .mt-5 {
-   margin-top: 5rem !important;
+  margin-top: 5rem !important;
 }
 // avisos
 .btnAvisos {
-   background: #FFF
+  background: #fff;
 }
 
 .width-button-fix {
-   width: 100%!important;
+  width: 100% !important;
 }
 
 // btn
 .btn-rounded {
-   border-radius: 50px;
+  border-radius: 50px;
 }
 
 // cards
 .view-card-thumb {
-   height: 130px!important;
+  height: 130px !important;
 }
 
 // .card-body {
@@ -48,157 +48,160 @@ links {
 // }
 
 .btn {
-   margin-top: 1rem !important
+  margin-top: 1rem !important;
 }
 // Modal
 .modal-title {
-   color: #FFF
+  color: #fff;
 }
 
 // navbar
 .navbar .dropdown-menu a {
-   padding: 4px;
+  padding: 4px;
 }
 .icons {
-    color: white
- }
- .icons :hover {
-    color: #bdc3c7 !important
- }
- .icons :focus {
-    color: #fff !important
- }
-
- .icons :after{
-    color: #FFF !important
- }
-
- .icons :before {
-    color: #FFF !important
- }
-
- // Pages
-.portada-paginas {
-   padding: 1.6rem 1rem !important;
+  color: white;
 }
-.mb-2{
-   margin-bottom: 2rem !important;
+.icons :hover {
+  color: #bdc3c7 !important;
+}
+.icons :focus {
+  color: #fff !important;
+}
+
+.icons :after {
+  color: #fff !important;
+}
+
+.icons :before {
+  color: #fff !important;
+}
+
+// Pages
+.portada-paginas {
+  padding: 1.6rem 1rem !important;
+}
+.mb-2 {
+  margin-bottom: 2rem !important;
 }
 // list
 .list-group-item {
-   padding: .4rem 1.25rem!important;
-   position: relative;
-   display: block;
-   margin-bottom: -1px;
-   background-color: transparent;
-   border: none;
-   font-size: .9rem;
+  padding: 0.4rem 1.25rem !important;
+  position: relative;
+  display: block;
+  margin-bottom: -1px;
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
 }
 .list-icon {
-   font-size: 9px!important;
-   margin-right: .3rem;
+  font-size: 9px !important;
+  margin-right: 0.3rem;
 }
 //  gradients
 
 .color-gradient-filosofia {
-   background: #11998e;
-   background: linear-gradient(to right, #38ef7d, #11998e)
+  background: #11998e;
+  background: linear-gradient(to right, #38ef7d, #11998e);
 }
 
 .color-gradient-normateca {
-   background: #2193b0;
-   background: linear-gradient(to right, #6dd5ed, #2193b0)
+  background: #2193b0;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
 }
 
 .color-gradient-becas {
-   background: #8e2de2;
-   background: linear-gradient(to bottom, #4a00e0, #8e2de2)
+  background: #8e2de2;
+  background: linear-gradient(to bottom, #4a00e0, #8e2de2);
 }
 
 .color-gradient-biblioteca {
-   background: #34e89e;
-   background: linear-gradient(to right, #0f3443, #34e89e)
+  background: #34e89e;
+  background: linear-gradient(to right, #0f3443, #34e89e);
 }
 
 .color-gradient-financieros {
-   background: #4ac29a;
-   background: linear-gradient(to right, #bdfff3, #4ac29a)
+  background: #4ac29a;
+  background: linear-gradient(to right, #bdfff3, #4ac29a);
 }
 
 .color-gradient-equidadgenero {
-   background: #7f00ff;
-   background: linear-gradient(to right, #e100ff, #7f00ff)
+  background: #7f00ff;
+  background: linear-gradient(to right, #e100ff, #7f00ff);
 }
 
 .color-gradient-igualdadlaboral {
-   background: #b993d6;
-   background: linear-gradient(to right, #8ca6db, #b993d6)
+  background: #b993d6;
+  background: linear-gradient(to right, #8ca6db, #b993d6);
 }
 
 .color-gradient-laboratorios {
-   background: #f2994a;
-   background: linear-gradient(to right, #f2c94c, #f2994a)
+  background: #f2994a;
+  background: linear-gradient(to right, #f2c94c, #f2994a);
 }
 
 .color-gradient-contacto {
-   background: #16222a;
-   background: linear-gradient(to right, #3a6073, #16222a)
+  background: #16222a;
+  background: linear-gradient(to right, #3a6073, #16222a);
 }
 
 // video tag
 
 video {
-   background-size: cover;
-   bottom: 0;
-   height: auto;
-   min-height: 100%;
-   min-width: 100%;
-   right: 0;
-   width: 100%;
-   z-index: -100;
+  background-size: cover;
+  bottom: 0;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  right: 0;
+  width: 100%;
+  z-index: -100;
 }
 
-// carreas banner 
+// carreas banner
 .cardCarrera {
-   z-index: 3;
-   margin-top: -1rem;
-   padding-top: 1.5rem;
-   padding-bottom: 1.5rem;
+  z-index: 3;
+  margin-top: -1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+// font-dev
+.font-dev {
+  font-size: 0.8em;
+  color: #ff5722;
 }
 
 // mapa
 agm-map {
-   height: 300px;
- }
-
-@media (min-width:320px) and (max-width:575px) {
-   .imgbanner {
-       height: 135px!important
-   }
+  height: 300px;
 }
 
-@media (min-width:576px) {
-   .imgbanner {
-       height: 229px!important
-   }
+@media (min-width: 320px) and (max-width: 575px) {
+  .imgbanner {
+    height: 135px !important;
+  }
 }
 
-@media (min-width:768px) {
-   .imgbanner {
-       height: 310px!important
-   }
+@media (min-width: 576px) {
+  .imgbanner {
+    height: 229px !important;
+  }
 }
 
-@media (min-width:992px) {
-   .imgbanner {
-       height: 390px!important
-   }
+@media (min-width: 768px) {
+  .imgbanner {
+    height: 310px !important;
+  }
 }
 
-@media (min-width:1200px) {
-   .imgbanner {
-       height: 420px!important
-   }
+@media (min-width: 992px) {
+  .imgbanner {
+    height: 390px !important;
+  }
 }
 
-
+@media (min-width: 1200px) {
+  .imgbanner {
+    height: 420px !important;
+  }
+}

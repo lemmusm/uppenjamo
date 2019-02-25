@@ -60,18 +60,16 @@ import { ContactoComponent } from './components/pages/contacto/contacto.componen
     ContanciaEstudiosComponent,
     ContactoComponent
   ],
-  imports:[
- CommonModule,
-NgtUniversalModule,
- 
-    
+  imports: [
+    CommonModule,
+    NgtUniversalModule,
     AppRoutingModule,
     MdbootstrapModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD9oIqArqOp5NP4_EMNqWkQcQUukVvY0qE'
     })
   ],
-  schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  schemas: [NO_ERRORS_SCHEMA],
+  providers: []
 })
-export class AppModule { }
+export class AppModule {}
