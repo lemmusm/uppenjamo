@@ -1,24 +1,6 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { InicioComponent } from './components/pages/inicio/inicio.component';
-import { FilosofiaInstitucionalComponent } from './components/pages/filosofia-institucional/filosofia-institucional.component';
-import { NormatecaComponent } from './components/pages/normateca/normateca.component';
-import { BecasComponent } from './components/pages/becas/becas.component';
-import { EquidadGeneroComponent } from './components/pages/equidad-genero/equidad-genero.component';
-import { IgualdadLaboralComponent } from './components/pages/igualdad-laboral/igualdad-laboral.component';
-import { BibliotecaDigitalComponent } from './components/pages/biblioteca-digital/biblioteca-digital.component';
-import { LaboratoriosComponent } from './components/pages/laboratorios/laboratorios.component';
-import { IltComponent } from './components/pages/ilt/ilt.component';
-import { IswComponent } from './components/pages/isw/isw.component';
-import { LagComponent } from './components/pages/lag/lag.component';
-import { IagComponent } from './components/pages/iag/iag.component';
-import { IndComponent } from './components/pages/ind/ind.component';
-import { IbtComponent } from './components/pages/ibt/ibt.component';
-import { PortalTransparenciaComponent } from './components/pages/portal-transparencia/portal-transparencia.component';
-import { HorariosGrupoComponent } from './components/pages/horarios-grupo/horarios-grupo.component';
-import { RequisitosInscripcionComponent } from './components/pages/requisitos-inscripcion/requisitos-inscripcion.component';
-import { ContanciaEstudiosComponent } from './components/pages/contancia-estudios/contancia-estudios.component';
-import { ContactoComponent } from './components/pages/contacto/contacto.component';
 
 const routes: Routes = [
   {
@@ -27,81 +9,96 @@ const routes: Routes = [
   },
   {
     path: 'filosofia-institucional',
-    component: FilosofiaInstitucionalComponent
+    loadChildren:
+      './components/pages/filosofia-institucional/filosofia-institucional.module#FilosofiaInstitucionalModule'
   },
   {
     path: 'normateca',
-    component: NormatecaComponent
+    loadChildren:
+      './components/pages/normateca/normateca.module#NormatecaModule'
   },
   {
     path: 'becas',
-    component: BecasComponent
+    loadChildren: './components/pages/becas/becas.module#BecasModule'
   },
   {
     path: 'biblioteca-digital',
-    component: BibliotecaDigitalComponent
+    loadChildren:
+      './components/pages/biblioteca-digital/biblioteca-digital.module#BibliotecaDigitalModule'
   },
   {
     path: 'equidad-genero',
-    component: EquidadGeneroComponent
+    loadChildren:
+      './components/pages/equidad-genero/equidad-genero.module#EquidadGeneroModule'
   },
   {
     path: 'igualdad-laboral',
-    component: IgualdadLaboralComponent
+    loadChildren:
+      './components/pages/igualdad-laboral/igualdad-laboral.module#IgualdadLaboralModule'
   },
   {
     path: 'laboratorios',
-    component: LaboratoriosComponent
+    loadChildren:
+      './components/pages/laboratorios/laboratorios.module#LaboratoriosModule'
   },
   {
     path: 'ilt',
-    component: IltComponent
+    loadChildren: './components/pages/ilt/ilt.module#IltModule'
   },
   {
     path: 'isw',
-    component: IswComponent
+    loadChildren: './components/pages/isw/isw.module#IswModule'
   },
   {
     path: 'lag',
-    component: LagComponent
+    loadChildren: './components/pages/lag/lag.module#LagModule'
   },
   {
     path: 'iag',
-    component: IagComponent
+    loadChildren: './components/pages/iag/iag.module#IagModule'
   },
   {
     path: 'ibt',
-    component: IbtComponent
+    loadChildren: './components/pages/ibt/ibt.module#IbtModule'
   },
   {
     path: 'ind',
-    component: IndComponent
+    loadChildren: './components/pages/ind/ind.module#IndModule'
   },
   {
     path: 'portal-transparencia',
-    component: PortalTransparenciaComponent
+    loadChildren:
+      './components/pages/portal-transparencia/portal-transparencia.module#PortalTransparenciaModule'
   },
   {
     path: 'horarios',
-    component: HorariosGrupoComponent
+    loadChildren:
+      './components/pages/horarios-grupo/horarios-grupo.module#HorariosGrupoModule'
   },
   {
     path: 'requisitos_inscripcion',
-    component: RequisitosInscripcionComponent
+    loadChildren:
+      './components/pages/requisitos-inscripcion/requisitos-inscripcion.module#RequisitosInscripcionModule'
   },
   {
     path: 'contancia_estudios',
-    component: ContanciaEstudiosComponent
+    loadChildren:
+      './components/pages/constancia-estudios/constancia-estudios.module#ConstanciaEstudiosModule'
   },
   {
     path: 'contacto',
-    component: ContactoComponent
+    loadChildren: './components/pages/contacto/contacto.module#ContactoModule'
   },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash:true})],
+  imports: [
+    RouterModule.forRoot(routes, {
+      useHash: true,
+      preloadingStrategy: PreloadAllModules
+    })
+  ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
