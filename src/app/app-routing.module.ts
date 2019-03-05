@@ -96,7 +96,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       useHash: true,
-      preloadingStrategy: PreloadAllModules
+      preloadingStrategy: PreloadAllModules,
+      scrollPositionRestoration: 'enabled'
     })
   ],
   exports: [RouterModule]
