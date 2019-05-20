@@ -1,10 +1,25 @@
 <div class="container main-container">
+
+  <!-- Avisos -->
+  <div class="alert alert-warning mt-5" role="alert">
+    <div class="row">
+      <div class="col-md-6 lineh">RESULTADOS EXAMEN 29 DE MARZO DE 2019</div>
+      <div class="col-md-6 text-right">
+        <a href="d/escolares/r_adminison/Aspirantes admitidos 29.03.19.pdf" target="_blank"
+          class="btn btn-primary mdb-color lighten-1 btn-sm waves-effect waves-light btn btn-rounded" type="button">
+          Consultar
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- carousel -->
   <app-slide></app-slide>
-<!-- accesos directos -->
+  <!-- accesos directos -->
   <div class="row mt-3">
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZRB07OPu6_et3-gMk4EbkGU9NMfTaAiIjtZCV9JrawCpb0g/formrestricted" target="_blank">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZRB07OPu6_et3-gMk4EbkGU9NMfTaAiIjtZCV9JrawCpb0g/formrestricted"
+        target="_blank">
         <div class="btn btnAvisos waves-effect width-button-fix teal-text">
           <i class="fa fa-comments-o teal-text pr-2"></i> Quejas y sug.
         </div>
@@ -13,51 +28,60 @@
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center">
       <a href="http://uppenjamo.edu.mx/bt/" target="_blank">
         <div class="btn btnAvisos waves-effect width-button-fix teal-text">
-        <i class="fa fa-briefcase teal-text pr-2"></i> Bolsa de trabajo
-      </div>
+          <i class="fa fa-briefcase teal-text pr-2"></i> Bolsa de trabajo
+        </div>
       </a>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center">
       <a [routerLink]="['becas']">
         <div class="btn btnAvisos waves-effect width-button-fix teal-text">
-        <i class="fa fa-graduation-cap teal-text pr-2"></i> Becas
-      </div>
+          <i class="fa fa-graduation-cap teal-text pr-2"></i> Becas
+        </div>
       </a>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 text-center">
       <a [routerLink]="['normateca']">
         <div class="btn btnAvisos waves-effect width-button-fix teal-text">
-        <i class="fa fa-file-text teal-text pr-2"></i> Normateca
-      </div>
+          <i class="fa fa-file-text teal-text pr-2"></i> Normateca
+        </div>
       </a>
     </div>
   </div>
-<!-- carreras -->
+  <!-- carreras -->
   <app-carreras></app-carreras>
-<!-- gobierno links -->
+  <!-- gobierno links -->
   <div class="row mt-5">
-    <div class="col-md-4 col-sm-4 mt-1 text-center">
-      <a href="http://www.guanajuato.gob.mx/" rel="noopener noreferrer" target="_blank">
+    <div class="col-md-3 col-sm-3 mt-1 text-center">
+      <a href="http://www.guanajuato.gob.mx/" rel="noopener noreferrer" target="_blank" placement="top"
+        ngbTooltip="Gobierno del Estado">
         <img src="./assets/img/gobierno/gto-logo2.png" />
       </a>
     </div>
-    <div class="col-md-4 col-sm-4 mt-1 text-center">
-      <a href="http://www.presidencia.gob.mx/" rel="noopener noreferrer" target="_blank">
+    <div class="col-md-3 col-sm-3 mt-1 text-center">
+      <a href="http://www.presidencia.gob.mx/" rel="noopener noreferrer" target="_blank" placement="top"
+        ngbTooltip="Gobierno Federal">
         <img src="./assets/img/gobierno/gobiernofederal.png" />
       </a>
     </div>
-    <div class="col-md-4 col-sm-4 mt-1 text-center">
-      <a href="http://cgut.sep.gob.mx/" rel="noopener noreferrer" target="_blank">
+    <div class="col-md-3 col-sm-3 mt-1 text-center">
+      <a href="http://cgutyp.sep.gob.mx/" rel="noopener noreferrer" target="_blank" placement="top" ngbTooltip="CGUTYP">
         <img src="./assets/img/gobierno/cgut.png" />
       </a>
     </div>
+    <div class="col-md-3 col-sm-3 mt-1 text-center">
+      <a href="http://www.upn113leon.edu.mx/index.php/cic" rel="noopener noreferrer" target="_blank" placement="top"
+        ngbTooltip="CIC">
+        <img src="./assets/img/gobierno/CIC.png" />
+      </a>
+    </div>
   </div>
-<!-- banner slogan -->
+  <!-- banner slogan -->
   <div class="frame-banner mt-5">
     <div class="flex-center">
-      <h3 class="teal-text text-center">COMPETITIVIDAD Y COMPROMISO SOCIAL PARA TRASCENDER</h3>
+      <h3 class="teal-text text-center">
+        COMPETITIVIDAD Y COMPROMISO SOCIAL PARA TRASCENDER
+      </h3>
     </div>
     <div class="color-overlay"></div>
   </div>
-
 </div>

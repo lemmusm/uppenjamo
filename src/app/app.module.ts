@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 // import mdbootstrapmodule
 import { MdbootstrapModule } from './mdbootstrap.module';
+// ng-bootstrap
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +28,8 @@ import { CarrerasComponent } from './components/shared/carreras/carreras.compone
     CommonModule,
     NgtUniversalModule,
     AppRoutingModule,
-    MdbootstrapModule
+    MdbootstrapModule,
+    NgbModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: []
