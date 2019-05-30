@@ -14,6 +14,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { InicioComponent } from './components/pages/inicio/inicio.component';
 import { SlideComponent } from './components/shared/slide/slide.component';
 import { CarrerasComponent } from './components/shared/carreras/carreras.component';
+import { PopupmultiusoComponent } from './components/shared/popupmultiuso/popupmultiuso.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CarrerasComponent } from './components/shared/carreras/carreras.compone
     FooterComponent,
     InicioComponent,
     SlideComponent,
-    CarrerasComponent
+    CarrerasComponent,
+    PopupmultiusoComponent
   ],
   imports: [
     CommonModule,
