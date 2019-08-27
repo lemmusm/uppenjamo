@@ -1,40 +1,20 @@
 <div class="alert alert-primary mt-3" role="alert">
   <div class="row">
     <div class="col-md-12 text-center">
-      <button
-            class="btn-sm waves-effect waves-light btn btn-rounded"
-            data-target="#basicExample"
-            data-toggle="modal"
-            mdbBtn color="secondary"
-            mdbwaveseffect=""
-            rounded="true"
-            type="button"
-            (click)="basicModal.show()"
-          >
-            CONSULTAR CONVOCATORIAS
-          </button>
+      <button class="btn-sm waves-effect waves-light btn btn-rounded" data-target="#basicExample" data-toggle="modal"
+        mdbBtn color="secondary" mdbwaveseffect="" rounded="true" type="button" (click)="basicModal.show()">
+        CONSULTAR CONVOCATORIAS
+      </button>
     </div>
   </div>
 </div>
 
-<div
-  mdbModal
-  #basicModal="mdbModal"
-  class="modal fade"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="myBasicModalLabel"
-  aria-hidden="true"
->
+<div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+  aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header info-color">
-        <button
-          type="button"
-          class="close pull-right"
-          aria-label="Close"
-          (click)="basicModal.hide()"
-        >
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
           <span aria-hidden="true">×</span>
         </button>
         <h4 class="modal-title w-100 text-center" id="myModalLabel">
@@ -42,29 +22,24 @@
         </h4>
       </div>
       <div class="modal-body">
-        <a
-          href="http://www.ieeg.mx/parlamento-juvenil-2019/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><p>Parlamento Juvenil Guanajuatense 2019</p>
+        <a href="./assets/tempfiles/popup/CONVOCATORIA INTERNA 2019.pdf" target="_blank" rel="noopener noreferrer">
+          <p>Convocatoria Rumbo CONIES 2019</p>
         </a>
-        <a
-          href="https://ieeg.mx/documentos/convocatoria-y-formato-especialistas-externos-ce-2019-pdf/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><p>Selección de especialistas externos del comité editorial del IEEG</p>
+        <a href="./assets/tempfiles/popup/PROGRAMA DE INVENCIONES 2019.pdf" target="_blank" rel="noopener noreferrer">
+          <p>Programa de invenciones 2019</p>
         </a>
-        <a
-          href="http://sices.guanajuato.gob.mx/convocatoria/22"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><p>Tercer Encuentro de Innovación y Creatividad para la Internacionalización en Casa</p></a
-        >
-        <a
-          href="./assets/img/slide/temp/convocatoria_corta_2019.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><p>Espacio ACUOSO</p>
+        <a href="http://www.ieeg.mx/parlamento-juvenil-2019/" target="_blank" rel="noopener noreferrer">
+          <p>Parlamento Juvenil Guanajuatense 2019</p>
+        </a>
+        <a href="https://ieeg.mx/documentos/convocatoria-y-formato-especialistas-externos-ce-2019-pdf/" target="_blank"
+          rel="noopener noreferrer">
+          <p>Selección de especialistas externos del comité editorial del IEEG</p>
+        </a>
+        <a href="http://sices.guanajuato.gob.mx/convocatoria/22" target="_blank" rel="noopener noreferrer">
+          <p>Tercer Encuentro de Innovación y Creatividad para la Internacionalización en Casa</p>
+        </a>
+        <a href="./assets/tempfiles/popup/convocatoria_corta_2019.pdf" target="_blank" rel="noopener noreferrer">
+          <p>Espacio ACUOSO</p>
         </a>
       </div>
     </div>
