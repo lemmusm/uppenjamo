@@ -8,6 +8,7 @@ body {
 
 links {
   margin-left: 2em;
+  font-weight: 400 !important
 }
 
 .main-container {
@@ -76,6 +77,28 @@ links {
 .icons :before {
   color: #fff !important;
 }
+
+// multidropdown
+.nav-item>.nav-link:hover{
+  color: #2f3542 !important;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-item:hover {
+  background-color: #dcdde1
+}
+.dropdown-submenu>.dropdown-menu {
+  margin-top: -10px;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  -moz-border-radius: 0px 0px 6px;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+// end multidropdown
 
 // Pages
 .portada-paginas {

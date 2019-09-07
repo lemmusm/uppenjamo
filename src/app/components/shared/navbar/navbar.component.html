@@ -11,7 +11,7 @@
   <links>
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown" dropdown>
+      <li class="nav-item dropdown-submenu" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Acerca de<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
@@ -20,7 +20,7 @@
           <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['normateca']">Normateca</a>
         </div>
       </li>
-      <li class="nav-item dropdown" dropdown>
+      <li class="nav-item dropdown-submenu" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Servicios<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
@@ -43,8 +43,8 @@
             rel="noopener noreferrer" target="_blank">Evaluación docente</a>
           <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['equidad-genero']">Módelo equidad de
             género</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="./assets/doc/juridico/metas_strc.zip"
-            target="_blank">Metas STRC</a>
+          <!-- <a class="dropdown-item waves-light" mdbWavesEffect href="./assets/doc/juridico/metas_strc.zip"
+            target="_blank">Metas STRC</a> -->
           <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['igualdad-laboral']">Norma Mexicana en
             Igualdad Laboral y No Discriminación</a>
           <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['laboratorios']">Laboratorios</a>
@@ -56,21 +56,38 @@
             rel="noopener noreferrer" target="_blank">URoadRunner magazine</a>
         </div>
       </li>
-      <li class="nav-item dropdown" dropdown>
+      <li class="nav-item dropdown-submenu" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Oferta educativa<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ilt']">Ingeniería en logística y
-            transporte</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['isw']">Ingeniería en sofware</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['lag']">Licenciatura en administración y
-            gestión empresarial</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['iag']">Ingeniería agroindustrial</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ibt']">Ingeniería en biotecnología</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ind']">Ingeniería industrial</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ilt']">
+            Ingeniería en logística y transporte
+          </a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['isw']">
+            Ingeniería en sofware
+          </a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['lag']">
+            Licenciatura en administración y gestión empresarial
+          </a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['iag']">
+            Ingeniería agroindustrial
+          </a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ibt']">
+            Ingeniería en biotecnología
+          </a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ind']">
+            Ingeniería industrial
+          </a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ime']">
+            Ingeniería mecatrónica
+          </a>
+          <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ina']">
+            Ingeniería automotriz
+          </a>
+          <!-- <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['ma']">Maestría en administración</a> -->
         </div>
       </li>
-      <li class="nav-item dropdown" dropdown>
+      <li class="nav-item dropdown-submenu" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Transparencia<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
@@ -80,7 +97,7 @@
             PEF y Estados Financieros</a>
         </div>
       </li>
-      <li class="nav-item dropdown" dropdown>
+      <li class="nav-item dropdown-submenu" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Control escolar<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
