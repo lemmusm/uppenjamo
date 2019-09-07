@@ -66,6 +66,18 @@ const routes: Routes = [
     loadChildren: './components/pages/ind/ind.module#IndModule'
   },
   {
+    path: 'ina',
+    loadChildren: './components/pages/ina/ina.module#InaModule'
+  },
+  {
+    path: 'ime',
+    loadChildren: './components/pages/ime/ime.module#ImeModule'
+  },
+  {
+    path: 'ma',
+    loadChildren: './components/pages/ma/ma.module#MaModule'
+  },
+  {
     path: 'portal-transparencia',
     loadChildren:
       './components/pages/portal-transparencia/portal-transparencia.module#PortalTransparenciaModule'
@@ -102,4 +114,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
