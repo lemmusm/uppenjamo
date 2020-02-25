@@ -1,27 +1,25 @@
-# Webuppenjamo
+![Alt text](https://i.imgur.com/pZiw686.png?raw=true "Educational website: Universidad Politécnica de Pénjamo")
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
+# Educational website for Universidad Politécnica de Pénjamo
 
-## Development server
+This project was developed with Angular Universal (SSR - Server Side Rendering) to manage SEO and automate processes, is a website that show information about institution and access to diferents platforms.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Implemented technologies
 
-## Code scaffolding
+* [Angular](https://angular.io/)
+* [Angular Universal](https://angular.io/guide/universal)
+* [@ng-toolkit/universal](https://github.com/maciejtreder/ng-toolkit#readme)
+* [MDBootstrap](https://mdbootstrap.com/docs/angular/getting-started/quick-start/)
+* [AgmMap](https://angular-maps.com/api-docs/agm-core/components/agmmap)
+* [Google Analytics](https://analytics.google.com/analytics/web/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Website on production
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+[uppenjamo.edu.mx](https://www.uppenjamo.edu.mx/)
 
-## Running unit tests
+## Contact
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* [twitter: lemmusm](https://twitter.com/lemmusm)
+* [email: lemmusm@gmail.com](lemmusm@gmail.com)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
